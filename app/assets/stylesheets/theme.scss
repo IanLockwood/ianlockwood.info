@@ -1,0 +1,104 @@
+html {
+  font-size: 100%;
+  text-align: center;
+  color: $ser;
+}
+
+body {
+  background-color: $rq;
+  font-family: 'futura';
+  color: $ser;
+  font-size: 12px;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 16px;
+  }
+}
+
+.main {
+  padding: 1em 1em;
+
+  @media (min-width: $screen-md-min) {
+    padding: 2em 2em;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 2em 3em;
+  }
+}
+
+a {
+  font-size: 2em;
+  color: $ser;
+  font-style: italic;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 5em;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 4em;
+  }
+}
+
+p {
+  font-size: 2em;
+}
+
+nav {
+  background: $ser;
+  color: $rq;
+
+  li.active {
+    a {
+      color: $ser;
+      background: $rq !important;
+    }
+  }
+
+  a {
+    color: $rq;
+    text-transform: uppercase;
+    font-size: 1.75em;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0.5em 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 1em;
+    }
+
+    &:hover {
+      color: $ser;
+      background: $rq !important;
+    }
+
+    &:focus {
+      color: $rq;
+      background: $ser !important;
+    }
+  }
+
+  .navbar-toggle {
+    background-color: $rq;
+
+    .icon-bar {
+      background-color: $ser;
+    }
+  }
+}

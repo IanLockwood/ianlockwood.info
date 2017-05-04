@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html
+  - controller_class = params[:controller]
+  - action_class = params[:action]
+  - body_class = controller_class + " " + action_class
+  head
+    title RUDE
+    = csrf_meta_tags
+    <meta name="viewport" content="initial-scale=1">
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body class=body_class
+    header
+      nav
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle data-target="#myNavbar" data-toggle="collapse" type="button"
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          #myNavbar.collapse.navbar-collapse
+            .navbar-right
+              ul.nav.navbar-nav
+                li class="#{'active' if current_page?(root_path)}" = link_to "Home", root_path
+                li class="#{'active' if current_page?(pitch_path)}" = link_to "Pitch a show", pitch_path
+                li class="#{'active' if current_page?(about_path)}" = link_to "About RUDE", about_path
+                li = link_to "Facebook", "https://www.facebook.com/RUDEComedyCo", target: "_blank"
+                li = link_to "Twitter", "https://www.twitter.com/RUDEComedyCo", target: "_blank"
+                li = link_to "Instagram", "https://www.instagram.com/RUDEComedyCo", target: "_blank"
+                li = link_to "Ground Floor", "https://www.facebook.com/groundfloorcomedy/", target: "_blank"
+
+    .main
+      = yield
+
+    footer

@@ -1,0 +1,23 @@
+.welcome.index {
+  .rude-web-banner {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
+
+.welcome.about {
+  .press-links {
+    a {
+      display: block;
+      text-transform: uppercase;
+      text-decoration: underline;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
