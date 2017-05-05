@@ -1,13 +1,13 @@
 html {
   font-size: 100%;
   text-align: center;
-  color: $ser;
+  color: $blk;
 }
 
 body {
-  background-color: $rq;
-  font-family: 'futura';
-  color: $ser;
+  background-color: $wht;
+  font-family: 'courier';
+  color: $blk;
   font-size: 12px;
 
   @media (min-width: $screen-md-min) {
@@ -33,7 +33,7 @@ body {
 
 a {
   font-size: 2em;
-  color: $ser;
+  color: $blu;
   font-style: italic;
 }
 
@@ -60,18 +60,18 @@ p {
 }
 
 nav {
-  background: $ser;
-  color: $rq;
+  background: $blu;
+  color: $grn;
 
   li.active {
     a {
-      color: $ser;
-      background: $rq !important;
+      color: $blu;
+      background: $grn !important;
     }
   }
 
   a {
-    color: $rq;
+    color: $grn;
     text-transform: uppercase;
     font-size: 1.75em;
 
@@ -84,21 +84,22 @@ nav {
     }
 
     &:hover {
-      color: $ser;
-      background: $rq !important;
+      color: $blu;
+      background: $grn !important;
     }
 
     &:focus {
-      color: $rq;
-      background: $ser !important;
+      color: $grn;
+      background: $blu !important;
+          padding: 15px 14px;
     }
   }
 
   .navbar-toggle {
-    background-color: $rq;
+    background-color: $grn;
 
     .icon-bar {
-      background-color: $ser;
+      background-color: $blu;
     }
   }
 }
