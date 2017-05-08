@@ -1,3 +1,45 @@
-= image_tag("ian-lockwood.jpg")
+.row
+  .col-xs-12.col-sm-5
+    .content-tile
+      = image_tag("ian-lockwood.jpg")
 
-h1 do I like this color
+    .content-tile
+      h2 Bio
+
+    .content-tile
+      h2 LIVE
+
+
+  .col-xs-12.col-sm-4
+    .content-tile.contact-tile
+      p For booking and inquiries:
+      p.text-link = mail_to "mrianlockwood@gmail.com"
+      p.text-link.m-a-0 = link_to "twitter.com/MrIanLockwood", "https://twitter.com/MrIanLockwood"
+
+    .content-tile
+      h2 Tweet
+
+    .content-tile
+      h2 Resume
+
+    .content-tile.desktop
+      = image_tag("rude.png")
+
+    .content-tile.desktop
+      = image_tag("groundfloor.png")
+
+    .content-tile.desktop
+      = image_tag("bbb.png")
+
+
+  .col-xs-12.col-sm-3.video-col
+    .content-tile
+      div style="position:relative;height:0;padding-bottom:56.25%"
+        iframe.youtube src="https://www.youtube.com/embed/zXN9mCzqTAM?ecver=2" frameborder="0" allowfullscreen
+
+    .content-tile
+      div style="position:relative;height:0;padding-bottom:56.25%"
+        iframe.youtube src="https://www.youtube.com/embed/nqG32fuMxJE?ecver=2" frameborder="0" allowfullscreen
+
+    .content-tile
+      = image_tag("more-video.png")

@@ -1,4 +1,22 @@
 .welcome.index {
+  .contact-tile {
+    text-align: center;
+    padding: 1em;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding: 2em;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      p {
+        font-size: 1.4em
+      }
+    }
+  }
 }
 
 .welcome.about {

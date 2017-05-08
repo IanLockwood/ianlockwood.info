@@ -13,10 +13,6 @@ body {
   @media (min-width: $screen-md-min) {
     font-size: 14px;
   }
-
-  @media (min-width: $screen-lg-min) {
-    font-size: 16px;
-  }
 }
 
 .main {
@@ -32,31 +28,31 @@ body {
 }
 
 a {
-  font-size: 2em;
   color: $blu;
   font-style: italic;
 }
 
 h1 {
   text-transform: uppercase;
-  font-size: 4em;
-
-  @media (min-width: $screen-md-min) {
-    font-size: 5em;
-  }
+  font-size: 3em;
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2em;
+}
 
-  @media (min-width: $screen-md-min) {
-    font-size: 4em;
-  }
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 2em;
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
 }
 
 nav {
@@ -102,4 +98,33 @@ nav {
       background-color: $blu;
     }
   }
+}
+
+.text-link {
+  color: $grn;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blu;
+    text-decoration: underline;
+  }
+
+  a {
+    color: $grn;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $blu;
+      text-decoration: underline;
+    }
+  }
+}
+
+.col-xs-12 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
