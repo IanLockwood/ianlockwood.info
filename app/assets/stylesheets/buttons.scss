@@ -1,13 +1,13 @@
 .btn {
   background: $blu;
-  color: $grn;
+  color: $wht;
   padding: 0.5em 3em;
   text-transform: uppercase;
   font-size: 1.5em;
 
   &:hover {
     border: 1px solid white;
-    color: $grn;
+    color: $wht;
   }
 
   &--huge {

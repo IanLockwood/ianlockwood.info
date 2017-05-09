@@ -23,13 +23,17 @@ html
           #myNavbar.collapse.navbar-collapse
             .navbar-right
               ul.nav.navbar-nav
-                li class="#{'active' if current_page?(root_path)}" = link_to "Home", root_path
-                li class="#{'active' if current_page?(pitch_path)}" = link_to "Pitch a show", pitch_path
-                li class="#{'active' if current_page?(about_path)}" = link_to "About RUDE", about_path
-                li = link_to "Facebook", "https://www.facebook.com/RUDEComedyCo", target: "_blank"
-                li = link_to "Twitter", "https://www.twitter.com/RUDEComedyCo", target: "_blank"
-                li = link_to "Instagram", "https://www.instagram.com/RUDEComedyCo", target: "_blank"
+                li class="#{'active' if current_page?(root_path)}" = link_to "home", root_path
+                li class="#{'active' if current_page?(live_path)}" = link_to "live", live_path
+                li class="#{'active' if current_page?(video_path)}" = link_to "video", video_path
+                li class="#{'active' if current_page?(contact_path)}" = link_to "contact", contact_path
+                li class="#{'active' if current_page?(resume_path)}" = link_to "resume", resume_path
+                li class="#{'active' if current_page?(rude_path)}" = link_to "rude", rude_path
+                // li class="#{'active' if current_page?(ground_floor_path)}" = link_to "ground floor", ground_floor_path
                 li = link_to "Ground Floor", "https://www.facebook.com/groundfloorcomedy/", target: "_blank"
+                li class="#{'active' if current_page?(bingo_bango_path)}" = link_to "bingo bango", bingo_bango_path
+                li = link_to "Twitter", "https://www.twitter.com/mrianlockwood", target: "_blank"
+                li = link_to "Instagram", "https://www.instagram.com/ianzzzzzzzzz", target: "_blank"
 
     .main
       = yield

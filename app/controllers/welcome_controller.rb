@@ -2,9 +2,24 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def pitch
+  def bingo_bango
   end
 
-  def about
+  def contact
+  end
+
+  def ground_floor
+  end
+
+  def live
+  end
+
+  def resume
+  end
+
+  def rude
+  end
+
+  def video
   end
 end

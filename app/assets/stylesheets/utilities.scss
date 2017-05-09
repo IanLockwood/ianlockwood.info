@@ -14,8 +14,8 @@
   list-style: none;
 }
 
-.grn {
-  color: $grn;
+.wht {
+  color: $wht;
 }
 
 .blu {
@@ -28,6 +28,18 @@
 
 .blk {
   color: $blk;
+}
+
+.desktop {
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
 }
 
 // margin and padding ----------------------------------------
@@ -239,6 +251,11 @@
 
 .p-a-0 {
   padding: 0;
+}
+
+.p-x-half {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .p-l-1 {

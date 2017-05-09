@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: $wht;
+  background-color: $blu;
   font-family: 'courier';
   color: $blk;
   font-size: 12px;
@@ -56,20 +56,21 @@ img {
 }
 
 nav {
-  background: $blu;
-  color: $grn;
+  background: $wht;
+  color: $blu;
 
   li.active {
     a {
-      color: $blu;
-      background: $grn !important;
+      color: $wht;
+      background: $blu !important;
     }
   }
 
   a {
-    color: $grn;
+    color: $blu;
     text-transform: uppercase;
     font-size: 1.75em;
+    padding: 10px;
 
     @media (max-width: $screen-xs-max) {
       margin: 0.5em 0;
@@ -80,28 +81,41 @@ nav {
     }
 
     &:hover {
-      color: $blu;
-      background: $grn !important;
+      color: $wht;
+      background: $blu !important;
     }
 
     &:focus {
-      color: $grn;
-      background: $blu !important;
-          padding: 15px 14px;
+      color: $blu;
+      background: $wht !important;
+      padding: 15px 14px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        padding: 11px 10px;
+      }
     }
   }
 
   .navbar-toggle {
-    background-color: $grn;
+    background-color: $blu;
 
     .icon-bar {
-      background-color: $blu;
+      background-color: $wht;
+    }
+  }
+
+  .navbar-nav > li > a {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 1em;
+      padding: 11px;
     }
   }
 }
 
+
+
 .text-link {
-  color: $grn;
+  color: $blu;
   text-decoration: none;
 
   &:hover,
@@ -112,7 +126,7 @@ nav {
   }
 
   a {
-    color: $grn;
+    color: $blu;
     text-decoration: none;
 
     &:hover,
@@ -124,7 +138,35 @@ nav {
   }
 }
 
+.hidden-link {
+  color: $blk;
+  text-decoration: none;
+  font-style: normal !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blu;
+    text-decoration: underline;
+  }
+
+  a {
+    color: $blk;
+    text-decoration: none;
+    font-style: normal !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $blu;
+      text-decoration: underline;
+    }
+  }
+}
+
 .col-xs-12 {
-  padding-left: 10px;
-  padding-right: 10px;
+  @media (min-width: $screen-sm-min) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

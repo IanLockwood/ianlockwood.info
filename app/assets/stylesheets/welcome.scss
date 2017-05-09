@@ -3,32 +3,49 @@
     text-align: center;
     padding: 1em;
 
+    @media (min-width: $screen-lg-min) {
+      p {
+        font-size: 1.25em
+      }
+    }
+  }
+
+  .name-tile {
+    color: $blu;
+  }
+
+  twitterwidget {
+    margin-top: 0 !important;
+  }
+}
+
+.welcome.video {
+  .content-tile {
+    background: transparent;
+    margin: 1%;
+    display: inline-block;
+    width: 98%;
+
     @media (min-width: $screen-sm-min) {
-      text-align: left;
+      width: 48%;
     }
 
     @media (min-width: $screen-md-min) {
-      padding: 2em;
-    }
-
-    @media (min-width: $screen-lg-min) {
-      p {
-        font-size: 1.4em
-      }
+      width: 30%;
     }
   }
 }
 
-.welcome.about {
-  .press-links {
-    a {
-      display: block;
-      text-transform: uppercase;
-      text-decoration: underline;
+.welcome.contact {
+  .contact-tile {
+    max-width: 656px;
+    margin: auto;
+  }
 
-      &:hover {
-        color: white;
-      }
-    }
+  .instagram-tile {
+    margin: auto;
+    text-align: center;
+    max-width: 656px;
+    margin-top: 3em;
   }
 }
