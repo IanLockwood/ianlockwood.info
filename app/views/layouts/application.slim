@@ -28,8 +28,9 @@ html
                 li class="#{'active' if current_page?(video_path)}" = link_to "video", video_path
                 li class="#{'active' if current_page?(contact_path)}" = link_to "contact", contact_path
                 li class="#{'active' if current_page?(resume_path)}" = link_to "resume", resume_path
-                li class="#{'active' if current_page?(rude_path)}" = link_to "rude", rude_path
+                //li class="#{'active' if current_page?(rude_path)}" = link_to "rude", rude_path
                 // li class="#{'active' if current_page?(ground_floor_path)}" = link_to "ground floor", ground_floor_path
+                li = link_to "Rude", "http://www.rudecomedy.com/", target: "_blank"
                 li = link_to "Ground Floor", "https://www.facebook.com/groundfloorcomedy/", target: "_blank"
                 li class="#{'active' if current_page?(bingo_bango_path)}" = link_to "bingo bango", bingo_bango_path
                 li = link_to "Twitter", "https://www.twitter.com/mrianlockwood", target: "_blank"
